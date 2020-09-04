@@ -10,16 +10,33 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "piral-core": "^0.11.8",
+    "piral-dashboard": "^0.11.8",
     "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "styled-components": "^5.2.0",
     "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "parcel-codegen-loader": "^0.6.3",
+    "piral-cli": "^0.11.8",
+    "piral-cli-webpack": "^0.11.8",
+    "piral-instance-webpack-plugin": "^0.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "pilets": {
+    "externals": [
+      "styled-components"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
