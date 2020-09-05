@@ -25,13 +25,14 @@
     "parcel-codegen-loader": "^0.6.3",
     "piral-cli": "^0.11.8",
     "piral-cli-webpack": "^0.11.8",
-    "piral-instance-webpack-plugin": "^0.6.3"
+    "piral-instance-webpack-plugin": "^0.6.3",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "start:prod": "yarn build &&  serve build -s -l 3000",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test"
   },
   "pilets": {
     "externals": [

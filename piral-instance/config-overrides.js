@@ -5,6 +5,8 @@ const piralPkg = require('./package.json');
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
   webpack: function(config, env) {
+    console.log('running custom webpack config from config-overrides.js');
+    
     const EnvironmentPlugin = webpack.EnvironmentPlugin;
     config.plugins.push(new EnvironmentPlugin({ SC_ATTR: "data-hp-styles" }));
 
